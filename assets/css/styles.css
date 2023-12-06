@@ -8,6 +8,92 @@ html {
 
 body {
     font-size: 1.6rem;
-    /* font-family: "Poppins", sans-serif;
-    font-family: "Sen", sans-serif; */
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+/* Common */
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0px 16px;
+    line-height: 40px;
+    min-width: 118px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 999px;
+    background: #171100;
+}
+
+/* Header */
+.header {
+    background: #fffcf4;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -30px;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 36px 0 6px;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav a {
+    position: relative;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    padding: 8px 21px;
+}
+
+.nav a:hover,
+.nav li.active a {
+    color: #171100;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.nav li.active a::after {
+    position: absolute;
+    bottom: 6px;
+    left: 21px;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 2px;
+    background: #171100;
+    border-radius: 1px;
+}
+
+.header .action {
+    margin-left: 49px;
+}
+
+.header .sign-up-btn {
+    min-width: 114px;
 }
